@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ch3 Opsys</title>
+    <style>
+        body {
+            background-image: url('wp-cswp.png');
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border: 2px solid #778DA9;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 225%;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            color: #E0E1DD;
+            background-color: rgba(58, 58, 85, 0.792);
+            margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 0px;
+        }
+
+        table, th, td {
+            border: 2px solid #778DA9;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: center;
+        }
+
+        th {
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: #90E0EF;
+        }
+
+        a:visited {
+            color: #48CAE4;
+        }
+
+        a:hover {
+            color: #00B4D8;
+        }
+
+        a:active {
+            color: #0096C7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td style="width:1000px;"><a href="index.html"> Home </a></td>
+            <td style="width:1000px;"><a href="https://www.pvcc.edu"> PVCC </a></td>
+            <td style="width:1000px;"><a href="https://www.w3schools.com/html/"> W3 Schools </a></td>
+            <td style="width:1000px;"><a href="contactus.html"> Contact Us</a></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <h1>Operating Systems Terminology</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>Operating System</td>
+            <td>The software that controls the overal operation of a computer. It provides the means by which a user can store and retrieve files, provides interface in which users request and execute programs.</td>
+        </tr>
+        <tr>
+            <td>Job Queue</td>
+            <td>Job queue is where jobs reside in mass storage waiting for execution in batch processing systems. A job is the execution of each program, a queue is a storage organization in which jobs are ordered in a first-in, first-out manner.</td>
+        </tr>
+        <tr>
+            <td>FIFO</td>
+            <td>First-in, first-out abbreviated. FIFO means objects are removed from the queue in the order in which they arrived. In reality, most jobs don’t follow the FIFO structure, but rather consider job priorities.</td>
+        </tr>
+        <tr>
+            <td>Interactive processing</td>
+            <td>Operating system that allows a program being executed to carry on a dialogue with the user through remote terminals to accommodate lack of interaction between users and their jobs once they are submitted to the operator.</td>
+        </tr>  
+        <tr>
+            <td>Time-sharing</td>
+            <td>Operating systems that provide service to multiple users at the same time, one means of implementing time-sharing is to apply the technique called mulitprogramming.</td>
+        </tr>  
+        <tr>
+            <td>Multiprogramming</td>
+            <td>Multiprogramming is when time is divided into intervals and then the execution of each job is restricted to only one interval at a time. At the end of each interval, the current job is temporarily set aside and another is allowed to execute during the next interval. Creates an illusion of several jobs executing simultaneously.</td>
+        </tr>  
+        <tr>
+            <td>Application Software</td>
+            <td>Consists of the programs for performing tasks particular to the machine’s utilization. Examples include spreadsheets, database systems, desktop publishing systems, accounting systems, program development software, and games. </td>
+        </tr>
+        <tr>
+            <td>System Software</td>
+            <td>Performs tasks that are common to computer systems in general. Provides infrastructure that the application software requires, in much the same manner as a nation’s infrastructure provides the foundation on which its citizens rely for their individual lifestyles. </td>
+        </tr>
+        <tr>
+            <td>Utility Software</td>
+            <td>Consists of software units that extend the capabilites of the operating system. They consist of programs for performing activities that are fundamental to computer installations but not included in the operating system. For example, the ability to format a disk is granted by a utility software.</td>
+        </tr>
+        <tr>
+            <td>Graphical User Interface (GUI)</td>
+            <td>A more modern user interface, a portion of an operating system that communicates with the users upon their requests, in which objects to be manipulated, such as files and programs, are represented pictorially on the display as icons.</td>
+        </tr>
+        <tr>
+            <td>Shell</td>
+            <td>An older user interface, communicated with users through textual messages using a keyboard and monitor screen.</td>
+        </tr>
+        <tr>
+            <td>Kernel</td>
+            <td>The internal part of an operating system, contains those software components that perform the very basic functions required by the computer installation.</td>
+        </tr>
+        <tr>
+            <td>Device Driver</td>
+            <td>A component of the kernel, consists of software units that communicate with the controllers to carry out operations on the peripheral devices attached to the machine. Each device driver is uniquely designed according to its device.</td>
+        </tr>
+        <tr>
+            <td>File Manager</td>
+            <td>Used to coordinate the use of the machine’s mass storage facilities. More precisely, maintaining records of all the files stored in mass storage, including where each file is located, which users are allowed to access the various files, and which portions of mass storag are available for new files or extensions to existing files.</td>
+        </tr>
+        <tr>
+            <td>Memory Manager</td>
+            <td>A component of the kernel, charged with the task of coordinating the machine’s use of main memory. The memory manager’s work is less extensive when the computer is only performing one task at a time. When the memory manager is tasked in a multitasking environment, it must find and assign memory space for those needs and ensure that the actions of each program are restricted to the program’s allotted space.</td>
+        </tr>
+        <tr>
+            <td>Virtual Memory</td>
+            <td>A large “fictional” memory space created by paging, paging is when the memory manager creates the illusion of additional memory space by rotating programs and data back and forth between main memory and mass storage.</td>
+        </tr>
+        <tr>
+            <td>Boot Strapping</td>
+            <td>Boot strapping is performed by a computer each time it is turned on, the shortened term is booting. Boot strapping transfers the operating system from mass storage into main memory.</td>
+        </tr>
+        <tr>
+            <td>ROM</td>
+            <td>Shortened from read-only memory, it is memory that can be read but not altered. Used when the computer is first turned on when a program needs to be present in main memory, but the computer’s volatile memory is erased each time the machine is turned off.</td>
+        </tr>
+        <tr>
+            <td>Deadlock</td>
+            <td>The condition in which two or more processes are blocked from progressing because each is waiting for a resource that is allocated to another. For example, one process may have access to the computer’s printer but be waiting for access to the computer’s DVD plater, while another process has access to the DVD player is waiting for the printer.</td>
+        </tr>
+        <tr>
+            <td>Spooling</td>
+            <td>The technique of holding data for output at a later but more convenient time.</td>
+        </tr>
+        <tr>
+            <td>Super User (or administrator)</td>
+            <td>Can establish accounts, has highly privileged access to the operating system by identifying him or herself as the administrator during the login procedure. Once this contact is established, the administrator can alter settings within the operating system, modify critical software packages, adjust the privileges granted to other users, and perform a variety of other maintenance activities that are denied normal users.</td>
+        </tr>
+        <tr>
+            <td>Multi-Factor Authentication</td>
+            <td>A process that requires users to enter more than one piece of evidence to gain access to their computer accounts, typically entering a password and then a special access code text messaged to the user’s smartphone during the login process.</td>
+        </tr>
+</html>
